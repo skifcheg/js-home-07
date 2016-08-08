@@ -1,5 +1,7 @@
-(function ($) {    
+(function($){        
     $.fn.trunc = function(options) {
+        'use strict';  
+        
         var settings = $.extend({
             count: 200,
             afterText: "..."
@@ -12,6 +14,6 @@
         } 
         
         return this;
-    };    
+    }; 
 }(jQuery));
 
