@@ -8,16 +8,16 @@
 <body>
     <p>        
         Write a jQuery plugin - trunc. 
-        Plugin truncates text and adds &hellip; to the end if text has too many characters limited by consumer of plugin inputted value.
+        Plugin truncates text and adds ... to the <span id="text">end if text has too many characters limited by consumer of plugin inputted value.</span>
         Click on ‘...’ should allow you to see the whole text.
         In this task, <span class="breaking-news"> pay additional attention to the quality of your code and documentation notes.</span>
-        README.md should have some short info on how to use you plugin, what can be configured, etc. It should be written with markdown
+        README.md should have some <span class="breaking-news">short info on how to use you plugin, what can be configured, etc.</span> It should be written with markdown
 
         Invocation example:
         $(‘.breaking-news’).trunc(200);
     </p>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/main.js"></script>
-    <script> $(".breaking-news").trunc(200); </script>
+    <script> $(".breaking-news").trunc(20); </script>
 </body>
 </html>
