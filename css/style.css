@@ -7,3 +7,26 @@ body{
 h1{
     text-align: center;
 }
+
+.wrap-text{
+	color: #999;	
+	position: relative;
+	cursor: pointer;
+	transition: all 2s;
+	font-weight: bold;
+}
+.wrap-text:before{
+	content: attr(title);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	display: none;
+	background: white;
+	padding: 0 4px 4px;
+	cursor: help;	
+	color: #333;	
+}
+.wrap-text:hover:before{
+	display: inline-block;
+}
